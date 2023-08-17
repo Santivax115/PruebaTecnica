@@ -1,0 +1,205 @@
+/** HEADER */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /*imagen del header*/
+  .header {
+    background-image: url('../IMG/madrid.jpg');
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10rem 0; 
+    color: white;
+  }
+  
+  /*Texto del header*/
+  .header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  
+  /* formulario inicio */
+
+  .container {
+    max-width:  70rem;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .section {
+    border: 2px solid #5624d0;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  label {
+    display: block;
+    padding:  7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px ;
+  }
+
+  label:hover {
+    background: #cec0fc;
+  }
+
+  label span {
+    position: absolute;
+    right: 0;
+    margin-right: 23%;
+    font-weight: bolder;
+  }
+
+  button {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #76d7c8;
+    border:none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  button:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  h2{
+    text-align: center;
+  }
+
+  #resultado{
+    font-size: 30px;
+    color:darkred
+  }
+  /*fin formulario */
+
+    /*Temporizador*/
+    .timer-container {
+        text-align: center;
+    }
+
+    .timer {
+        font-size: 3rem;
+        color: #333;
+        border: 2px solid #333;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*buton start*/
+    .button-start {
+        background-color: #76d7c8;
+        text-align: center;
+        margin-top: 1rem;
+        height: 50%;
+        width: 50%;
+    }
+
+    /*modal temporizador*/
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal-content {
+        background-color: rgb(92, 85, 85);
+        margin: 20% auto;
+        padding: 20px;
+        border-radius: 5px;
+        width: 50%;
+        text-align: center;
+        position: relative;
+    }
+    
+    .modal-content p {
+      color: #fff;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    /*fin temporizador */
+
+    /*Modo Oscuro*/
+    .dark-mode {
+      background-color: #1a1a1a;
+      color: #ffffff;
+  }
+  
+  .dark-mode .timer {
+    color: yellow; /* Cambia el color del temporizador a amarillo en el modo oscuro */
+  }
+
+  .timer-dark {
+    color: yellow; /* Cambia el color del temporizador a amarillo en el modo oscuro */
+  }
+
+  /*boton de dark mode*/
+  .dark-mode-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+  #btnRetry {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: fit-content;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #btnRetry a{
+    color: white;
+    text-decoration:none;
+  }
+
